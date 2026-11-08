@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Portfolio</title>
+<meta name="description" content="Personal portfolio website">
+<meta name="theme-color" content="#14123a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hind+Siliguri:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><span class="loader-logo" data-site="initials"></span></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="blob" id="blob" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#home" class="logo" data-site="name">Portfolio</a>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <ul id="navList"></ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <article class="hero-text">
+      <p class="hello">Hello, I'm</p>
+      <h1 data-site="name">MD. Rifatul Islam</h1>
+      <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+      <p class="lead" data-site="tagline"></p>
+      <p class="actions">
+        <a class="btn magnetic" href="#projects">See my work</a>
+        <a class="btn ghost magnetic" href="#contact">Say hello</a>
+      </p>
+    </article>
+    <figure class="hero-fig tilt">
+      <img id="heroImg" alt="Portrait" width="480" height="480">
+      <figcaption class="badge" data-site="badge"></figcaption>
+    </figure>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+  <section id="about" class="section">
+    <h2 class="reveal">About me</h2>
+    <div class="about-grid">
+      <figure class="about-fig reveal"><img id="aboutImg" alt="About me" loading="lazy" width="420" height="520"></figure>
+      <article class="reveal">
+        <p id="aboutText1"></p>
+        <p id="aboutText2"></p>
+        <ul class="stats" id="stats"></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2 class="reveal">Services</h2>
+    <div class="cards" id="services-list"></div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="reveal">Skills</h2>
+    <ul class="skills" id="skills-list"></ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="reveal">Projects</h2>
+    <div class="projects" id="projects-list"></div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="reveal">Contact</h2>
+    <div class="contact-grid">
+      <article class="reveal">
+        <p class="lead">Have an idea or a job? <strong>Let's build it together.</strong> I usually reply <em>within a day</em>.</p>
+        <address id="contactInfo"></address>
+        <ul class="socials" id="socials"></ul>
+      </article>
+      <form class="form reveal" id="form">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn magnetic" type="submit">Send message</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> <strong data-site="name"></strong>. Made with <em>love</em> and code.</p>
+  <a href="#home" class="to-top">Back to top</a>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
