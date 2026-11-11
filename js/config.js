@@ -13,7 +13,7 @@ const CONFIG = {
   },
 
   images: {
-    hero: "images/Profile.png", // main photo (square works best)
+    hero: "images/hero.png", // main photo (square works best)
     about: "images/about.jpg", // about photo (portrait works best)
   },
 
